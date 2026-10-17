@@ -1,0 +1,10 @@
+{
+  "platformio-ide.autoUpdate": false,
+  "files.watcherExclude": {
+    "**/.pio/**": true
+  },
+  "search.exclude": {
+    "**/.pio/**": true
+  },
+  "platformio-ide.disablePIOHomeStartup": true
+}
