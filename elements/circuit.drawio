@@ -1,6 +1,6 @@
 <mxfile host="WorkBuddy" modified="2026-10-25T13:28:00+08:00" agent="WorkBuddy" version="24.0.0" type="device">
   <diagram id="gesture3mode-wiring-v2" name="Gesture3Mode 接线图">
-    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="880" math="0" shadow="0">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="880" math="0" shadow="0" background="#ffffff">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -463,7 +463,81 @@
           <mxGeometry x="930" y="758" width="240" height="16" as="geometry" />
         </mxCell>
 
-      </root>
+                <!-- ===== 模块图标（一目了然） ===== -->
+          <mxCell id="icon_oled_frame" value="" style="rounded=1;arcSize=12;fillColor=#1A1A1A;strokeColor=#000000;shadow=0;" vertex="1" parent="1">
+            <mxGeometry x="68" y="296" width="126" height="94" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_oled_screen" value="" style="rounded=0;fillColor=#0A2E4D;strokeColor=#0A2E4D;" vertex="1" parent="1">
+            <mxGeometry x="77" y="305" width="108" height="68" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_oled_l1" value="" style="rounded=1;arcSize=50;fillColor=#66D9FF;strokeColor=none;" vertex="1" parent="1">
+            <mxGeometry x="86" y="314" width="58" height="9" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_oled_l2" value="" style="rounded=1;arcSize=50;fillColor=#3FB8E8;strokeColor=none;" vertex="1" parent="1">
+            <mxGeometry x="86" y="331" width="90" height="9" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_oled_l3" value="" style="rounded=1;arcSize=50;fillColor=#3FB8E8;strokeColor=none;" vertex="1" parent="1">
+            <mxGeometry x="86" y="348" width="74" height="9" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_oled_btn" value="" style="rounded=1;arcSize=50;fillColor=#2B7FBF;strokeColor=none;" vertex="1" parent="1">
+            <mxGeometry x="86" y="362" width="30" height="7" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_paj_f1" value="" style="rounded=1;arcSize=50;fillColor=#F2C094;strokeColor=#D69A66;" vertex="1" parent="1">
+            <mxGeometry x="86" y="588" width="10" height="26" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_paj_f2" value="" style="rounded=1;arcSize=50;fillColor=#F2C094;strokeColor=#D69A66;" vertex="1" parent="1">
+            <mxGeometry x="99" y="582" width="10" height="32" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_paj_f3" value="" style="rounded=1;arcSize=50;fillColor=#F2C094;strokeColor=#D69A66;" vertex="1" parent="1">
+            <mxGeometry x="112" y="580" width="10" height="34" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_paj_f4" value="" style="rounded=1;arcSize=50;fillColor=#F2C094;strokeColor=#D69A66;" vertex="1" parent="1">
+            <mxGeometry x="125" y="584" width="10" height="30" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_paj_palm" value="" style="rounded=1;arcSize=32;fillColor=#F2C094;strokeColor=#D69A66;" vertex="1" parent="1">
+            <mxGeometry x="83" y="612" width="60" height="48" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_paj_thumb" value="" style="rounded=1;arcSize=50;fillColor=#F2C094;strokeColor=#D69A66;rotation=-30;" vertex="1" parent="1">
+            <mxGeometry x="138" y="620" width="34" height="12" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_paj_arc1" style="edgeStyle=none;curved=1;endArrow=none;strokeColor=#00997A;strokeWidth=2;" edge="1" parent="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="70" y="590" as="sourcePoint" />
+              <mxPoint x="62" y="640" as="targetPoint" />
+              <Array as="points"><mxPoint x="50" y="615" /></Array>
+            </mxGeometry>
+          </mxCell>
+          <mxCell id="icon_paj_arc2" style="edgeStyle=none;curved=1;endArrow=none;strokeColor=#00997A;strokeWidth=2;" edge="1" parent="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="78" y="604" as="sourcePoint" />
+              <mxPoint x="70" y="650" as="targetPoint" />
+              <Array as="points"><mxPoint x="60" y="628" /></Array>
+            </mxGeometry>
+          </mxCell>
+          <mxCell id="icon_buz_body" value="" style="ellipse;fillColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+            <mxGeometry x="1028" y="316" width="90" height="90" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_buz_hole" value="" style="ellipse;fillColor=#4A4A4A;strokeColor=none;" vertex="1" parent="1">
+            <mxGeometry x="1056" y="344" width="34" height="34" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_buz_core" value="" style="ellipse;fillColor=#8A8A8A;strokeColor=none;" vertex="1" parent="1">
+            <mxGeometry x="1066" y="354" width="14" height="14" as="geometry" />
+          </mxCell>
+          <mxCell id="icon_buz_wav1" style="edgeStyle=none;curved=1;endArrow=none;strokeColor=#E66600;strokeWidth=2.5;" edge="1" parent="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1126" y="336" as="sourcePoint" />
+              <mxPoint x="1126" y="386" as="targetPoint" />
+              <Array as="points"><mxPoint x="1142" y="361" /></Array>
+            </mxGeometry>
+          </mxCell>
+          <mxCell id="icon_buz_wav2" style="edgeStyle=none;curved=1;endArrow=none;strokeColor=#E66600;strokeWidth=2.5;" edge="1" parent="1">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="1144" y="322" as="sourcePoint" />
+              <mxPoint x="1144" y="400" as="targetPoint" />
+              <Array as="points"><mxPoint x="1164" y="361" /></Array>
+            </mxGeometry>
+          </mxCell>
+        </root>
     </mxGraphModel>
   </diagram>
 </mxfile>

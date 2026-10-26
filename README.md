@@ -51,7 +51,7 @@
 
 ### 接线图
 
-![Gesture3Mode 硬件接线图](./circuit.svg)
+![Gesture3Mode 硬件接线图](./elements/circuit.svg)
 
 - OLED SSD1306 与 PAJ7620U2 共用 I²C：SDA 接 GPIO21，SCL 接 GPIO22；地址分别为 0x3C 和 0x73。
 - 两个模块均接 3.3V 和公共 GND。PAJ7620U2 默认 I²C 地址为 0x73（AD1 引脚悬空或接 GND）。
@@ -133,33 +133,17 @@ OLED 屏幕（128×64）实时显示以下信息：
 
 ### 已连接蓝牙（信号良好）
 
-```
-┌──────────────────────────────┐
-│ Gesture 3Mode  ▂▄▆█ ● ○ ○  │
-│ Mode: Presenter              │
-│ Gesture: PageUp              │
-│ BLE: linked  -52dBm          │
-│ Total: 37  Last: 3s          │
-└──────────────────────────────┘
-```
+![OLED 已连接蓝牙](./elements/oled_screen_connected.svg)
 
 ### 未连接蓝牙
 
-```
-┌──────────────────────────────┐
-│ Gesture 3Mode          ○ ● ○ │
-│ Mode: Browser                │
-│ Gesture: ScrollUp            │
-│ BLE: searching               │
-│ Total: 21  Last: 1s ago      │
-└──────────────────────────────┘
-```
+![OLED 未连接蓝牙](./elements/oled_screen_disconnected.svg)
 
 ### 各行含义
 
 | 行号 | 内容 | 说明 |
 |---|---|---|
-| 第 1 行 | 标题 + 信号格 + 模式圆点 | 信号格 4 格，按 RSSI 动态填充（阈值 -50/-65/-80 dBm）；RSSI 尚未读取时显示空格；3 个圆点，实心表示当前模式 |
+| 第 1 行 | 标题 + 信号格 + 模式圆点 | 右侧信号格 4 格，按 RSSI 动态填充（≥-50 dBm → 4 格、≥-65 → 3 格、≥-80 → 2 格、更弱 → 1 格；未连接时 4 格全部空心）；3 个圆点对应三种模式（实心 = 当前模式：1=Presenter, 2=Browser, 3=Media） |
 | 第 2 行 | 模式名称 | Presenter / Browser / Media（对应演示/浏览/媒体） |
 | 第 3 行 | 手势名称 | 持久显示，直到新手势到来 |
 | 第 4 行 | 蓝牙状态 + RSSI | linked / searching + dBm 数值 |
@@ -350,7 +334,7 @@ BLE 初始化失败时，OLED（若可用）和串口会报告 `BLE: FAIL!`；�
 
 - PAJ7620U2 数据手册
 - [RevEng_PAJ7620 库文档](https://github.com/acrandal/RevEng_PAJ7620)
-- [NimBLE-Arduino 示例](htstps://github.com/h2zero/NimBLE-Arduino)
+- [NimBLE-Arduino 示例](https://github.com/h2zero/NimBLE-Arduino)
 - ESP32 技术参考手册
 
 ### 许可

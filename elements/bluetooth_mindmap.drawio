@@ -1,6 +1,6 @@
 <mxfile host="WorkBuddy" modified="2026-10-25T15:08:00+08:00" agent="WorkBuddy" version="24.0.0" type="device">
   <diagram id="ble-hid-mindmap" name="蓝牙 HID 工作原理思维导图">
-    <mxGraphModel dx="1600" dy="1000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1620" pageHeight="1020" math="0" shadow="0">
+    <mxGraphModel dx="1600" dy="1000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1620" pageHeight="1020" math="0" shadow="0" background="#ffffff">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
