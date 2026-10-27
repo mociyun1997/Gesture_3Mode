@@ -389,7 +389,7 @@
             <mxPoint x="1010" y="205" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lbl_oled_vdd" value="VDD" style="text;html=1;fontSize=8;fontStyle=1;fontColor=#A87D00;align=left;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="lbl_oled_vdd" value="VCC" style="text;html=1;fontSize=8;fontStyle=1;fontColor=#A87D00;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="836" y="218" width="30" height="12" as="geometry" />
         </mxCell>
         <!-- OLED GND：芯片底部 → GND 符号（= 公共地） -->
@@ -443,7 +443,7 @@
             <mxPoint x="1010" y="505" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lbl_paj_vdd_feed" value="VDD" style="text;html=1;fontSize=8;fontStyle=1;fontColor=#A87D00;align=left;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="lbl_paj_vdd_feed" value="VCC" style="text;html=1;fontSize=8;fontStyle=1;fontColor=#A87D00;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="1016" y="166" width="30" height="12" as="geometry" />
         </mxCell>
         <mxCell id="paj_vdd_local" value="" style="edgeStyle=none;rounded=0;html=1;strokeWidth=2.5;strokeColor=#D9A400;endArrow=none;startArrow=none;" edge="1" parent="1">
@@ -538,7 +538,7 @@
         <mxCell id="lbl_paj_scl" value="SCL" style="text;html=1;fontSize=8;fontStyle=1;fontColor=#1C4299;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="896" y="574" width="26" height="12" as="geometry" />
         </mxCell>
-        <mxCell id="lbl_paj_vdd" value="VDD" style="text;html=1;fontSize=8;fontStyle=1;fontColor=#A87D00;align=left;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="lbl_paj_vdd" value="VCC" style="text;html=1;fontSize=8;fontStyle=1;fontColor=#A87D00;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="838" y="516" width="30" height="12" as="geometry" />
         </mxCell>
 
@@ -604,7 +604,7 @@
         <mxCell id="note" value="" style="rounded=1;arcSize=10;fillColor=#F5F7FA;strokeColor=#B7C3D2;strokeWidth=1.5;" vertex="1" parent="1">
           <mxGeometry x="40" y="716" width="1130" height="64" as="geometry" />
         </mxCell>
-        <mxCell id="note_text" value="说明：① SSD1306 与 PAJ7620U2 模块均为 4 脚（VDD、GND、SDA、SCL 各 1 个），GND 符号 = 接公共地。Rp1/Rp2 为 OLED 板载上拉 4.7kΩ，Rp3/Rp4 为 PAJ7620U2 板载上拉 10kΩ（不同厂家常见 4.7k~10kΩ），均接本模块 VDD(3.3V)；SDA、SCL 是两根独立总线，各线上两颗并联：4.7k∥10k ≈ 3.2kΩ，大于 I²C 标准模式下限（3.3V、3mA 灌电流时约 1kΩ），可直接使用。② 交叉处无圆点 = 不相连（图中有两处：PAJ 的 SDA 竖线与 SCL 横线、SCL 总线与 PAJ 的 VDD 引下线）。③ GPIO5 为推挽输出（PMOS/NMOS 图腾柱，LEDC 输出 4kHz PWM），可主动输出高/低电平；三线蜂鸣器模块板载驱动三极管，推挽直连即可。④ GPIO21/22 开漏输出，只能拉低、高电平由 Rp1~Rp4 提供，构成 I²C 线与（Wired-AND）机制。其余接线见 circuit.drawio。" style="text;html=1;fontSize=11;fontColor=#444444;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="note_text" value="说明：① SSD1306 与 PAJ7620U2 模块均为 4 脚（VCC、GND、SDA、SCL 各 1 个），GND 符号 = 接公共地。Rp1/Rp2 为 OLED 板载上拉 4.7kΩ，Rp3/Rp4 为 PAJ7620U2 板载上拉 10kΩ（不同厂家常见 4.7k~10kΩ），均接本模块 VCC(3.3V)；SDA、SCL 是两根独立总线，各线上两颗并联：4.7k∥10k ≈ 3.2kΩ，大于 I²C 标准模式下限（3.3V、3mA 灌电流时约 1kΩ），可直接使用。② 交叉处无圆点 = 不相连（图中有两处：PAJ 的 SDA 竖线与 SCL 横线、SCL 总线与 PAJ 的 VCC 引下线）。③ GPIO5 为推挽输出（PMOS/NMOS 图腾柱，LEDC 输出 4kHz PWM），可主动输出高/低电平；三线蜂鸣器模块板载驱动三极管，推挽直连即可。④ GPIO21/22 开漏输出，只能拉低、高电平由 Rp1~Rp4 提供，构成 I²C 线与（Wired-AND）机制。其余接线见 circuit.drawio。" style="text;html=1;fontSize=11;fontColor=#444444;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="40" y="716" width="1130" height="64" as="geometry" />
         </mxCell>
 

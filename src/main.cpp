@@ -196,11 +196,10 @@ static void repeatKey(uint8_t modifier, uint8_t key, uint8_t count) {
     }
 }
 
-// 重复发送滚轮脉冲，每次脉冲后立即释放滚轮值。
+// 滚轮是相对位移，不需要释放报告；脉冲间隔让主机有时间接收每次通知。
 static void repeatWheel(int8_t direction, uint8_t count) {
     for (uint8_t i = 0; i < count; i++) {
         sendMouse(0, 0, direction, 0);
-        sendMouse(0, 0, 0, 0);
         if (i + 1 < count) delay(HID_REPEAT_INTERVAL_MS);
     }
 }

@@ -209,7 +209,7 @@
                 <mxCell id="d2_c4" parent="1" style="text;html=1;fontFamily=Courier New;fontSize=10;fontColor=#24292F;align=left;verticalAlign=middle;spacingLeft=12;" value="  你的 setup() / loop() 在这里跑" vertex="1">
                     <mxGeometry height="15" width="420" x="940" y="435" as="geometry"/>
                 </mxCell>
-                <mxCell id="d2_n" parent="1" style="text;html=1;fontSize=10;fontColor=#555555;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;whiteSpace=wrap;" value="两个核由同一个 FreeRTOS 调度器统一管理：蓝牙收发跑在 Core 0，用户代码跑在 Core 1，几乎互不抢时间。" vertex="1">
+                <mxCell id="d2_n" parent="1" style="text;html=1;fontSize=10;fontColor=#555555;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;whiteSpace=wrap;" value="两个核由同一个 FreeRTOS 调度器统一管理：蓝牙收发跑在 Core 0，用户代码跑在 Core 1，几乎互不抢时间。这是 Arduino 框架的默认绑定（loopTask 固定 Core 1、NimBLE host 固定 Core 0），main.cpp 未显式调用绑核 API，无需任何额外代码。" vertex="1">
                     <mxGeometry height="48" width="420" x="940" y="454" as="geometry"/>
                 </mxCell>
                 <mxCell id="d3_card" parent="1" style="rounded=1;arcSize=8;fillColor=#F7F2FD;strokeColor=#C7ADF2;strokeWidth=1.5;shadow=1;" value="" vertex="1">
